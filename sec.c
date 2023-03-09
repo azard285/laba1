@@ -2,7 +2,7 @@
 
 typedef struct
 {
- char str[3];
+ char str[5];
  int num;
 } NumberRepr;
 
@@ -15,6 +15,7 @@ int main()
 {
  NumberRepr number = { .num = 1025 };
  format(&number);
+ 
  printf("str: %s\n", number.str);
  printf("num: %d\n", number.num);
  return 0;
